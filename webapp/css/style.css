@@ -1,0 +1,136 @@
+/* Stiluri pentru banner */
+.banner {
+    background-color: yellowgreen; /* Culoare maro rustic */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Aliniere verticală la centru */
+    align-items: center;  /* Aliniere orizontală la centru */
+    padding: 50px;  /* Mărim padding-ul pentru a adăuga mai mult spațiu */
+    height: 150px;  /* Setăm o înălțime minimă pentru banner */
+    color: white;
+    font-family: 'Georgia', serif;
+    margin-top: 30px; /* Spațiu de 30px deasupra bannerului */
+}
+
+.headerContent {
+    justify-content: center;
+    align-items: center;
+    text-align: center;  /* Asigurăm alinierea centrală a textului */
+}
+
+.title {
+    font-size: 48px; /* Dimensiune mărită pentru titlu */
+    font-weight: bold;
+    color: #FFD700; /* Auriu */
+    margin-bottom: 10px; /* Spațiu sub titlu */
+}
+
+.motto {
+    font-size: 23px; /* Dimensiune mai mare pentru motto */
+    font-style: italic;
+    color: yellowgreen; /* Culoare crem pentru un look rustic */
+    margin-top: 10px; /* Spațiu deasupra motto-ului */
+}
+
+/* Stiluri pentru tabel rustic */
+.rusticTable {
+    border: 0px solid #8B4513;
+    background-color: beige;
+    border-radius: 8px;
+    padding: 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Stiluri pentru antetul coloanelor */
+.sapMColumnHeader {
+    background-color: #D2B48C;
+    color: #8B4513;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px, 10px, 10px, 10px;
+    font-size: 18px;
+    font-family: 'Georgia', serif;
+    margin: 5px;
+
+}
+
+/* Stil pentru text în rândurile tabelului */
+.sapMText {
+    font-size: 16px;
+    color: #8B4513;
+    text-align: center;
+    padding: 10px, 10px, 10px, 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* Stilizare butoane */
+.rusticButton {
+    background-color: ; /* Maro închis */
+    color: #D2B48C !important; /* Forțăm textul alb */
+    font-weight: bold;
+    border: none; /* Eliminăm bordurile suplimentare */
+    border-radius: 8px; /* Colțuri rotunjite */
+    padding: 6px 15px; /* Padding ajustat pentru a centra textul */
+    margin: 5px;
+    font-size: 14px;
+    min-width: 100px; /* Dimensiune minimă */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Asigurăm centrare pe verticală și orizontală */
+    vertical-align: middle; /* Centrare pe verticală */
+    line-height: normal; /* Eliminăm eventuale probleme de înălțime a textului */
+}
+
+.rusticButton:hover {
+    background-color: yellow; /* Maro mai închis la hover */
+    transform: scale(1.05); /* Efect de mărire ușoară */
+}
+
+.rusticButton:focus {
+    outline: none; /* Eliminăm contururile albastre */
+    box-shadow: none;
+}
+
+/* Ajustarea butonului de adăugare produs */
+.addProductButton {
+    background-color: yellowgreen;
+    font-weight: bold;
+    border: green;
+    border-radius: 8px;
+    padding: 16px, 16px, 16px, 16px;    
+    font-size: 14px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.addProductButton:hover {
+    background-color: yellow ;
+
+}
+
+
+/* Stil pentru search bar */
+.searchBar {
+    background-color: green; /* Fundal bej deschis */
+    color: green; /* Text maro */
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    border: 1px solid #8B4513; /* Bordură maro */
+    width: 300px; /* Lățime fixă pentru a nu ocupa toată pagina */
+    margin: 10px auto; /* Centrare și spațiu între elemente */
+    display: block; /* Centrare pe orizontală */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Efect de umbră */
+    transition: background-color 0.3s ease;
+}
+
+.searchBar:focus {
+    outline: rgb(97, 97, 67); /* Eliminăm contururile albastre */
+    background-color: #128d3b; /* Schimbăm culoarea fundalului la focus */
+}
+
+.searchBar::placeholder {
+    color: #f56701; /* Culoarea placeholder-ului maro */
+    font-style: italic;
+}

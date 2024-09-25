@@ -1,0 +1,59 @@
+<mvc:View
+    controllerName="magazin.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    
+    <!-- Toolbar pentru banner -->
+    <Toolbar class="banner">
+        <VBox class="headerContent" justifyContent="Center" alignItems="Center">
+            <Title text="S.C. Razvan&amp;Larisa S.R.L. SUCEAVA" level="H1" class="title" />
+            <Text text="Magazin mixt înființat în anul 1994, în orașul Solca" class="motto" />
+        </VBox>
+    </Toolbar>
+    
+    <!-- Tabel pentru stocul produselor -->
+    <VBox class="sapUiSmallMargin">
+     <Toolbar>
+         <Title text="Stoc produse si operatii de a adauga, edita si sterge." class="motto"/>
+    </Toolbar>
+        <Table id="tableId" items="{/produse}" class="rusticTable">
+            <headerToolbar>
+                <Toolbar>
+                    <SearchField placeholder="Caută produs..." liveChange="onSearch" class="addProductButton" width="25%" />
+                    <ToolbarSpacer />
+                    <Button text="Adaugă produs" press="onAdd" class="addProductButton" />
+                </Toolbar>
+            </headerToolbar>
+
+            <columns>
+                <Column>
+                    <Text text="ID" class="sapMColumnHeader" />
+                </Column>
+                <Column>
+                    <Text text="Nume Produs" class="sapMColumnHeader" />
+                </Column>
+                <Column>
+                    <Text text="Cantitate" class="sapMColumnHeader" />
+                </Column>
+                <Column>
+                    <Text text="Operații" class="sapMColumnHeader" />
+                </Column>
+            </columns>
+
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="{id}" class="sapMText" />
+                        <Text text="{nume}" class="sapMText" />
+                        <Text text="{cantitate}" class="sapMText" />
+                        <HBox>
+                            <Button text="Editează" press="onEdit" class="addProductButton" />
+                            <Button text="Șterge" press="onDelete" class="addProductButton" />
+                        </HBox>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </VBox>
+
+</mvc:View>

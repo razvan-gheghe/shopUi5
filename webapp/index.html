@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Magazin Mixt - Stoc</title>
+    <script
+        id="sap-ui-bootstrap"
+        src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_fiori_3"
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-compatVersion="edge"
+        data-sap-ui-resourceroots='{
+            "magazin": "./"
+        }'>
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+        sap.ui.getCore().attachInit(function () {
+            new sap.ui.core.ComponentContainer({
+                name: "magazin",
+                settings: {
+                    id: "magazin"
+                },
+                async: true
+            }).placeAt("content");
+        });
+    </script>
+</head>
+<body class="sapUiBody">
+    <div id="content"></div>
+</body>
+</html>

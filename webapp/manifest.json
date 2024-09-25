@@ -1,0 +1,74 @@
+{"sap.app": {
+    "id": "shop",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+        "version": "1.0.0"
+    },
+    "title": "Magazin Mixt - Stoc",
+    "description": "Aplicație pentru gestionarea stocului unui magazin mixt",
+    "dataSources": {},
+    "resources": "resources.json"
+},
+"sap.ui": {
+    "technology": "UI5",
+    "icons": {
+        "icon": "sap-icon://cart"
+    },
+    "deviceTypes": {
+        "desktop": true,
+        "tablet": true,
+        "phone": true
+    }
+},
+"sap.ui5": {
+    "rootView": {
+        "viewName": "magazin.view.View1",
+        "type": "XML",
+        "async": true,
+        "id": "app"
+    },
+    "dependencies": {
+        "minUI5Version": "1.84",
+        "libs": {
+            "sap.m": {},
+            "sap.ui.core": {},
+            "sap.ui.layout": {}
+        }
+    },
+    "models": {
+        "": {
+            "type": "sap.ui.model.json.JSONModel"
+        }
+    },
+    "resources": {
+        "css": [
+            {
+                "uri": "css/style.css"
+            }
+        ]
+    },
+    "routing": {
+        "config": {
+            "routerClass": "sap.m.routing.Router",
+            "viewType": "XML",
+            "viewPath": "magazin.view",
+            "controlId": "app",
+            "controlAggregation": "pages",
+            "async": true
+        },
+        "routes": [
+            {
+                "pattern": "",
+                "name": "View1",
+                "target": "View1"
+            }
+        ],
+        "targets": {
+            "View1": {
+                "viewName": "View1"
+            }
+        }
+    }
+}
+}
